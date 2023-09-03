@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --gray:  #5E6366;
+    --light-black:#3A3A3A;
+    --black:#18191F;
+}
+ /* common shared style  */
+ .btn-primary{
+    background: #E02C6D;
+    padding: 15px 25px;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    border-radius: 40px;
+ }
+/* header styles code  */
+header{
+    margin:100px 150px;
+}
+nav h2{
+    color: var(--light-black);
+    font-size: 2.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+    
+    
+
+    
+}
+nav li a{
+    text-decoration: none;
+    color: var(--gray);
+    
+}
+.icon{
+    display: flex;
+   gap: 40px;
+    font-size: 2rem;
+
+}
+/* banner section code  */
+.banner-content{
+    display: flex;
+    padding-top: 120px;
+    justify-content: space-between;
+    background-image: url("image/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+/* .banner-img{
+    width: 500px;
+} */
+.banner-img img{
+    width: 100%;
+}
+.section-title{
+    font-size:8vh;
+    color: var(--light-black);
+    font-weight: 800px;
+}
+.section-description{
+    color: var(--light-black);
+    font-weight: 600;
+    padding: 20px 0;
+    font-size: 3vh;
+}
+@media screen and (max-width:600px) {
+    .header{
+        margin: 20px 20px;
+    }
+    nav ,nav ul{
+        flex-direction: column;
+         text-align: center; 
+        
+    }
+    .banner-content{
+        flex-direction: column-reverse;
+        background-position: top;
+         text-align: center; 
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    
+    
+}
